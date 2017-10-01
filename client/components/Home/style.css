@@ -1,0 +1,45 @@
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.post_detail_link:hover {
+  text-decoration: none;
+}
+
+.buttons_container {
+  display: table-row;
+}
+
+.share-button-wrapper {
+  display: table-cell;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.share-button,
+.share-button:active {
+  display: inline-block;
+  cursor: pointer;
+  height: 37px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  transition: 0.5s linear;
+}
+
+.share-button:hover {
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+.short-about {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.short-about img {
+  margin-bottom: 5%;
+}

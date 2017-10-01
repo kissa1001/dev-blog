@@ -9,6 +9,9 @@ import App from './components/app';
 import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
 
+import { Posts } from '../imports/collections/posts';
+import { Comments } from '../imports/collections/comments';
+
 const routes = (
   <BrowserRouter>
     <div>

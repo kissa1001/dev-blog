@@ -1,0 +1,45 @@
+.header {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  padding-bottom: 5%;
+}
+
+.navbar {
+  margin-bottom: 3%;
+}
+
+.header a {
+  color: #fff;
+  margin-right: 20px;
+  transition: linear 0.3s;
+}
+
+.header a:hover {
+  color: #58C9B9;
+}
+
+.logo {
+  width: 100px;
+}
+
+.navbar-brand{
+  margin:0 auto;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+.home-header {
+  font-family: 'Satisfy', cursive;
+  color: #58C9B9;
+  font-size: 4em;
+}
+
+body .navbar-inverse .navbar-toggler {
+    border: none!important;
+    outline: none!important;
+    cursor: pointer;
+}

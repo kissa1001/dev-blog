@@ -1,0 +1,16 @@
+.menu {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.menu-link {
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 2%;
+  transition: all .2s ease-in-out;
+}
+
+.menu-link:hover, menu-link:active, menu-link:visited {
+  text-decoration: none;
+  border-radius: 15px;
+}
