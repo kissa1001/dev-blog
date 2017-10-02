@@ -43,3 +43,15 @@
 .short-about img {
   margin-bottom: 5%;
 }
+
+.post-page {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.post-page img {
+  width: 80%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}

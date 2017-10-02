@@ -73,6 +73,7 @@ class ListCategory extends Component {
 
 
 export default createContainer((props) => {
+  console.log(props.match.params)
   const postCategory = props.match.params.postCategory;
   Meteor.subscribe('posts', PER_PAGE);
   return { posts: Posts.find({ category: postCategory }).fetch()}

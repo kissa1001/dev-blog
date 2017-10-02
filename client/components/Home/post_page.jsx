@@ -7,6 +7,8 @@ import {Card, CardHeader, CardText} from 'material-ui/Card';
 import IconButton from 'material-ui/IconButton';
 import NewComment from './create_comment';
 import SocialBtns from './SocialButtons';
+var Highlight = require('react-highlight');
+import './agate.css';
 
 class PostPage extends Component {
   showCategory() {
@@ -54,9 +56,8 @@ class PostPage extends Component {
   renderPostDetails() {
     if(this.props.post) {
       const post = this.props.post;
-      console.log(post);
       return (
-        <div>
+        <div className="container">
             <div className="post-details">
               <h2>{post.title}</h2>
               {this.showCategory()}
@@ -79,7 +80,7 @@ class PostPage extends Component {
   }
   render() {
     return (
-      <div className="container" style={{paddingBottom: '3em'}}>
+      <div className="post-page" style={{paddingBottom: '3em'}}>
         {this.renderPostDetails()}
         <div className="responses">
           <h4>{this.props.comments.length} Comments:</h4>

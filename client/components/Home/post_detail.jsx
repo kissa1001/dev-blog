@@ -30,7 +30,7 @@ class PostDetail extends Component {
             {this.showCategory()}
           </CardTitle>
           <CardText>
-            {post.content}
+            {post.description}
           </CardText>
           <CardActions>
               <SocialBtns
@@ -38,7 +38,7 @@ class PostDetail extends Component {
               media={post.image}
               image={post.image}
               subject={post.title}
-              body={post.content}
+              body={post.description}
               quote={post.title}
               title={post.title}
                />
