@@ -1,0 +1,25 @@
+.about {
+  background-image: url(/images/background-tile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 5% 3%;
+}
+
+.about h1 {
+  font-family: 'Fanwood';
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.about img {
+  margin-top: 1em;
+}
+
+.about .green {
+  color: #58C9B9;
+}
+
+.about p {
+  font-size: 1.1em;
+}

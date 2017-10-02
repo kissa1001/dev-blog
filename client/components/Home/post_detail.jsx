@@ -6,16 +6,16 @@ import SocialBtns from './SocialButtons';
 class PostDetail extends Component {
   showCategory() {
     if(this.props.post.category === "Tech") {
-      return <span style={{backgroundColor: '#f7b733', padding: '3px 5px', color:'#fff', borderRadius: '5px'}}>{this.props.post.category}</span>
+      return <span style={{backgroundColor: '#f7b733', padding: '3px 5px', color:'#fff', borderRadius: '5px'}}><i className="fa fa-code" aria-hidden="true"></i> {this.props.post.category}</span>
     }
     else if(this.props.post.category === "Travel") {
-      return <span style={{backgroundColor: 'rgb(147, 84, 202)', padding: '3px 5px', color:'#fff', borderRadius: '5px'}}>{this.props.post.category}</span>
+      return <span style={{backgroundColor: 'rgb(147, 84, 202)', padding: '3px 5px', color:'#fff', borderRadius: '5px'}}><i className="fa fa-globe" aria-hidden="true"></i> {this.props.post.category}</span>
     }
     else if(this.props.post.category === "Lifestyle") {
-      return <span style={{backgroundColor: 'rgb(72, 191, 131)', padding: '3px 5px', color:'#fff', borderRadius: '5px'}}>{this.props.post.category}</span>
+      return <span style={{backgroundColor: 'rgb(72, 191, 131)', padding: '3px 5px', color:'#fff', borderRadius: '5px'}}><i className="fa fa-heart" aria-hidden="true"></i> {this.props.post.category}</span>
     }
     else if(this.props.post.category === "Books") {
-      return <span style={{backgroundColor: 'rgb(239, 86, 79)', padding: '3px 5px', color:'#fff', borderRadius: '5px'}}>{this.props.post.category}</span>
+      return <span style={{backgroundColor: 'rgb(239, 86, 79)', padding: '3px 5px', color:'#fff', borderRadius: '5px'}}><i className="fa fa-book" aria-hidden="true"></i> {this.props.post.category}</span>
     }
   }
   render() {
@@ -23,7 +23,7 @@ class PostDetail extends Component {
     return (
         <Card style={{cursor: 'pointer'}}>
           <CardMedia>
-            <img src={post.image} alt={post.image} />
+            <img src={`/images/${post.image}`} alt={post.image} />
           </CardMedia>
           <CardTitle title={post.title} subtitle={`${post.createdAt}`}>
             <br/>

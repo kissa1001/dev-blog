@@ -35,10 +35,10 @@ class Menu extends Component {
     return (
       <div className="menu text-center">
         <Link className="menu-link" to="/" style={styles.all}><i className="fa fa-th-large" aria-hidden="true"></i> All</Link>
-        <Link className="menu-link" to="/" style={styles.tech}><i className="fa fa-code" aria-hidden="true"></i> Tech</Link>
-        <Link className="menu-link" to="/" style={styles.travel}><i className="fa fa-globe" aria-hidden="true"></i> Travel</Link>
-        <Link className="menu-link" to="/" style={styles.lifestyle}><i className="fa fa-heart" aria-hidden="true"></i> Lifestyle</Link>
-        <Link className="menu-link" to="/" style={styles.books}><i className="fa fa-book" aria-hidden="true"></i> Books</Link>
+        <Link className="menu-link" to="/categories/Tech" style={styles.tech}><i className="fa fa-code" aria-hidden="true"></i> Tech</Link>
+        <Link className="menu-link" to="/categories/Travel" style={styles.travel}><i className="fa fa-globe" aria-hidden="true"></i> Travel</Link>
+        <Link className="menu-link" to="/categories/Lifestyle" style={styles.lifestyle}><i className="fa fa-heart" aria-hidden="true"></i> Lifestyle</Link>
+        <Link className="menu-link" to="/categories/Books" style={styles.books}><i className="fa fa-book" aria-hidden="true"></i> Books</Link>
       </div>
     )
   }

@@ -11,7 +11,7 @@ class Navbar extends Component {
             <span className="navbar-toggler-icon"></span>
           </button>
           <Link className="navbar-brand" to="/">
-            <img className="logo" src="logo_transparent.png" alt="logo"/>
+            <img className="logo" src="/images/logo_transparent.png" alt="logo"/>
           </Link>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">

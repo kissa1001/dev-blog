@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { createContainer } from 'meteor/react-meteor-data';
-import PostDetail from './post_detail';
-import { Link } from 'react-router-dom';
 import { Posts } from '../../../imports/collections/posts';
-import { FlatButton } from 'material-ui';
+import { List } from 'material-ui/List';
+import PostDetail from './post_detail';
+import FlatButton from 'material-ui/FlatButton';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 const PER_PAGE = 20;
 
-class PostsList extends Component {
+class ListCategory extends Component {
   constructor(props) {
     super(props);
     this.state = { search: '' }
@@ -22,13 +23,14 @@ class PostsList extends Component {
     this.page = 1;
   }
 
+  handleChange = (event, index, value) => this.setState({value});
+
   handleButtonClick () {
     Meteor.subscribe('posts', PER_PAGE * (this.page + 1));
     this.page += 1;
   }
 
   render() {
-    console.log(this.props.posts)
     let filteredPosts = this.props.posts.filter(
       (post) => {
         return post.title.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
@@ -70,7 +72,8 @@ class PostsList extends Component {
 }
 
 
-export default createContainer(() => {
+export default createContainer((props) => {
+  const postCategory = props.match.params.postCategory;
   Meteor.subscribe('posts', PER_PAGE);
-  return { posts: Posts.find({}, {sort: {createdAt: -1}}).fetch()}
-}, PostsList);
+  return { posts: Posts.find({ category: postCategory }).fetch()}
+}, ListCategory);
