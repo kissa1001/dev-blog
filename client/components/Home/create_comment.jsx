@@ -94,7 +94,7 @@ class CreateComment extends React.Component {
             <DraftjsFormsyInput
   						name="content"
   						value={this.state.value}
-  						label="Type your response here:"
+  						label="Type your comment here:"
   						help="Select text to show options."
   						plugins={[this.inlineToolbarPlugin, emojiPlugin]}
   						style={editorStyle}
