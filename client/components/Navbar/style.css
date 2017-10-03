@@ -39,7 +39,5 @@
 }
 
 body .navbar-inverse .navbar-toggler {
-    border: none!important;
-    outline: none!important;
     cursor: pointer;
 }
