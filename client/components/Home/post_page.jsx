@@ -81,7 +81,7 @@ class PostPage extends Component {
   render() {
     console.log(this.props.post)
     console.log(this.props.comments)
-    onsole.log(this.props.posts)
+    console.log(this.props.posts)
     return (
       <div className="post-page" style={{paddingBottom: '3em'}}>
         {this.renderPostDetails()}
@@ -101,5 +101,5 @@ export default createContainer((props) => {
   const postId = props.match.params.postId;
   Meteor.subscribe('posts');
   Meteor.subscribe('comments');
-  return { posts: Posts.find({}, {sort: {createdAt: -1}}).fetch(), post: Posts.findOne(postId).fetch(), comments: Comments.find({postId: postId }).fetch() };
+  return { posts: Posts.find({}, {sort: {createdAt: -1}}).fetch(), post: Posts.findOne(postId), comments: Comments.find({postId: postId }).fetch() };
 }, PostPage);
