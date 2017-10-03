@@ -36,6 +36,7 @@ class ListCategory extends Component {
         return post.title.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
       }
     );
+    console.log(this.props.posts)
     return(
       <div className="container">
         <div className="row">

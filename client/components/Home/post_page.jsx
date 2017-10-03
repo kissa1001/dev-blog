@@ -79,6 +79,8 @@ class PostPage extends Component {
     }
   }
   render() {
+    console.log(this.props.post)
+    console.log(this.props.comments)
     return (
       <div className="post-page" style={{paddingBottom: '3em'}}>
         {this.renderPostDetails()}
