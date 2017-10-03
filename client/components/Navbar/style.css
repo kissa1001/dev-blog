@@ -4,7 +4,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   color: #fff;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
+  padding-top: 3%;
 }
 
 .navbar {
@@ -40,4 +41,18 @@
 
 body .navbar-inverse .navbar-toggler {
     cursor: pointer;
+}
+
+.navbar_nav {
+  list-style-type: none;
+  text-align: center;
+}
+
+.social_links {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.navbar_nav .nav_links {
+  display: inline-block;
 }
