@@ -7,7 +7,7 @@ import FlatButton from 'material-ui/FlatButton';
 import { Link } from 'react-router-dom';
 import './style.css';
 
-const PER_PAGE = 20;
+const PER_PAGE = 4;
 
 class ListCategory extends Component {
   constructor(props) {
