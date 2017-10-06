@@ -6,7 +6,7 @@ import { Posts } from '../../../imports/collections/posts';
 import { FlatButton } from 'material-ui';
 import './style.css';
 
-const PER_PAGE = 4;
+const PER_PAGE = 6;
 
 class PostsList extends Component {
   constructor(props) {
@@ -28,7 +28,6 @@ class PostsList extends Component {
   }
 
   render() {
-    console.log(this.props.posts)
     let filteredPosts = this.props.posts.filter(
       (post) => {
         return post.title.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
