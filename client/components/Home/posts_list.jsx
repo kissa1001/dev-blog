@@ -6,7 +6,7 @@ import { Posts } from '../../../imports/collections/posts';
 import { FlatButton } from 'material-ui';
 import './style.css';
 
-const PER_PAGE = 20;
+const PER_PAGE = 4;
 
 class PostsList extends Component {
   constructor(props) {
