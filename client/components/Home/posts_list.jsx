@@ -6,7 +6,7 @@ import { Posts } from '../../../imports/collections/posts';
 import { FlatButton } from 'material-ui';
 import './style.css';
 
-const PER_PAGE = 4;
+const PER_PAGE = 20;
 
 class PostsList extends Component {
   constructor(props) {
@@ -72,5 +72,5 @@ class PostsList extends Component {
 
 export default createContainer(() => {
   Meteor.subscribe('posts', PER_PAGE);
-  return { posts: Posts.find({}, {sort: {date: -1}}).fetch()}
+  return { posts: Posts.find({}, {sort: {createdAt: -1}}).fetch()}
 }, PostsList);
