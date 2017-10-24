@@ -71,5 +71,5 @@ class PostsList extends Component {
 
 export default createContainer(() => {
   Meteor.subscribe('posts', PER_PAGE);
-  return { posts: Posts.find({}, {sort: {date: -1}}).fetch()}
+  return { posts: Posts.find({}).fetch()}
 }, PostsList);
