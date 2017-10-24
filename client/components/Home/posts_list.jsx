@@ -6,7 +6,7 @@ import { Posts } from '../../../imports/collections/posts';
 import { FlatButton } from 'material-ui';
 import './style.css';
 
-const PER_PAGE = 6;
+const PER_PAGE = 4;
 
 class PostsList extends Component {
   constructor(props) {
@@ -36,7 +36,7 @@ class PostsList extends Component {
     return(
       <div className="container">
         <div className="row">
-          <div className="post-list-wrapper col-sm-9">
+          <div className="post-list-wrapper col-sm-9" style={{paddingBottom: '2em'}}>
             <div className="post-list">
               {filteredPosts.map((post) => {
                 const url = `/posts/${post._id}`;
